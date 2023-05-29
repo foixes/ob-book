@@ -1,7 +1,15 @@
-name: Call HTTP API
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Call-HTTP-API
+
 on:
+  # Runs on pushes targeting the default branch
   push:
-    branches: [ main ]
+    branches: ["main"]
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
 
 jobs:
   call-api:
